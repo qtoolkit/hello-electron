@@ -4,8 +4,9 @@
   "description": "qtk hello world.",
   "main": "www/main.js",
   "scripts": {
-    "test": "tsc && webpack && ./node_modules/karma/bin/karma start",
-    "build": "tsc && webpack"
+    "build": "tsc && webpack",
+    "pack": "build --dir --project release",
+    "dist": "build --project release"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,10 @@
     "webpack": "^1.13.1",
     "nan": "^2.5.0",
     "qtk": "git+https://github.com/qtoolkit/qtk.git"
+  },
+  "build": {
+    "appId": "demo.qtk.cn",
+    "productName": "Demo"
   },
   "dependencies": {
     "bindings": "^1.2.1"
