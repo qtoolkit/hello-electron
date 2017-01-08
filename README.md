@@ -4,6 +4,7 @@
 
 ```
 npm install 
+make config
 ```
 
 编译：
@@ -12,9 +13,17 @@ npm install
 make
 ```
 
-运行：
-
+测试运行：
 ```
-node run start
+node_modules/.bin/electron .
 ```
 
+Mac/Linux打包(生成app.asar)：
+```
+./release.sh
+```
+
+Windows打包(生成app.asar)：
+```
+release
+```
