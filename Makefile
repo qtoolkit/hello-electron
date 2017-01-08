@@ -13,7 +13,7 @@ all:
 	npm run build
 
 clean:
-	$(RM) js build prebuilds app.asar release
+	$(RM) doc coverage js build prebuilds app.asar release
 
 config:
 	node-gyp configure
